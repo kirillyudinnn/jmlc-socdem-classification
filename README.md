@@ -22,21 +22,22 @@
 
 ```
     jmlc-socdem-classification/
-    ├── notebooks/                          # Ноутбуки с EDA и обучением моделей
-        ├── 001_eda.ipynb                   # Часть EDA по сбору признаков 
-        ├── 002_gradient_boosting.ipynb     # Обучение модели градиентного бустинга
-        ├── 003_genapon.ipynb               # Обучение нейросетевой модели
-    ├── src/                                # Код моделей
-        ├── boosting/                       # Код для модели градиентного бустинга
-            ├── boosting_consts.py          # Константные значения
-            ├── features_config.py          # Конфиг класс, содержащий описание функций агрегации признаков
-            ├── user_history_builder.py     # Класс для генерации пользовательских данных, применяющихся в классификаторе
-        ├── genapon/                        # GENAPON модель
-            ├── dataloader.py               # Data класс для модели
-            ├── deepsets_model.py           # Имплементация DeepSets архитектуры
-            ├── ffn.py                      # Feed Forward Neural Network слой
-            ├── model.py                    # GENAPON модель
-            ├── time2vec_model.py           # Имплементация Time2Vec архитектуры
-            ├── trainer.py                  # Trainer класс для обучения модели
+    ├── notebooks/                              # Ноутбуки с EDA и обучением моделей
+        ├── 001_eda.ipynb                       # Часть EDA по сбору признаков 
+        ├── 002_gradient_boosting.ipynb         # Обучение модели градиентного бустинга
+        ├── 003_genapon.ipynb                   # Обучение нейросетевой модели
+    ├── src/
+        ├── models/                             # Код моделей
+            ├── boosting/                       # Код для модели градиентного бустинга
+                ├── boosting_consts.py          # Константные значения
+                ├── features_config.py          # Конфиг класс, содержащий описание функций агрегации признаков
+                ├── user_history_builder.py     # Класс для генерации пользовательских данных, применяющихся в классификаторе
+            ├── genapon/                        # GENAPON модель
+                ├── dataloader.py               # Data класс для модели
+                ├── deepsets_model.py           # Имплементация DeepSets архитектуры
+                ├── ffn.py                      # Feed Forward Neural Network слой
+                ├── model.py                    # GENAPON модель
+                ├── time2vec_model.py           # Имплементация Time2Vec архитектуры
+                ├── trainer.py                  # Trainer класс для обучения модели
 
 ```
