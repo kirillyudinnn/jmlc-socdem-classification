@@ -1,0 +1,11 @@
+.DS_Store
+.idea/
+**/__pycache__
+**/.pytest_cache
+**/*.pyc
+resources.ini
+.venv/
+.vscode/
+.env
+**/.ipynb_checkpoints
+**/catboost_info
