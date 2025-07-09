@@ -25,6 +25,24 @@ class GENAPON(nn.Module):
 
             time_vector_input_size (int): time embedding size (must be equal to emb_dim from t2v layer)
             time_vector_hidden_size (int): hidden time embedding size
+
+            v_hidden_dim (int): video FFN hidden layer size
+            v_output_dim (int): video FFN output size
+            v_dropout_prob (float): video FFN dropout probability
+
+            t_hidden_dim (int): time vector FFN hidden layer size
+            t_output_dim (int): time vector FFN output size
+            t_dropout_prob (float): time vector FFN dropout probability
+
+            user_features_dim (int): user vector FFN input size
+            u_hidden_dim (int): user vector FFN hidden layer size 
+            u_output_dim (int): user vector FFN output size
+            u_dropout_prob (float): user vector FFN dropout probability
+
+            c_hidden_dim (int): result vector FFN hidden layer size
+            c_output_dim (int): result vector FFN output size
+            c_dropout_prob (float): result vector FFN dropout probability
+
     """
     def __init__(
             self,

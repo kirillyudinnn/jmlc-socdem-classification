@@ -76,10 +76,10 @@ class UserHistoryFeatureGenerator:
                 normalize = value_counts["mode"]
                 values = value_counts["values"]
 
-                feature_vc_statistics = grouped_events[feature_name].value_counts(normalize=True)
+                feature_vc_statistics = grouped_events[feature_name].value_counts()
 
                 if normalize == ValueCountsMode.NORMALIZE:
-                    feature_vc_statistics = grouped_events[feature_name].value_counts(normalize=True)
+                    feature_vc_statistics = feature_vc_statistics / grouped_events.size()
                 
                 elif normalize == ValueCountsMode.BOTH:
                     raise NotImplementedError
